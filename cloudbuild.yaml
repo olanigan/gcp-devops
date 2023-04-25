@@ -3,5 +3,5 @@
 steps:
   - name: 'docker'
     args: ['build','-t','gcr.io/$PROJECT_ID/gcpflask','.']
-  - images:
+  images:
     - 'gcr.io/$PROJECT_ID/gcpflask'
