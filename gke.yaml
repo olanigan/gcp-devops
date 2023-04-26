@@ -5,7 +5,7 @@ metadata:
     app: flask-app
   name: flask-app
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: flask-app
@@ -16,7 +16,7 @@ spec:
         app: flask-app
     spec:
       containers:
-      - image: gcr.io/deep-voyage-384219/gcpflask
+      - image: gcr.io/deep-voyage-384219/gcpflask:latest
         name: gcp-flask
         resources: {}
 status: {}
@@ -27,8 +27,7 @@ metadata:
   labels:
     app: flask-app
     app.kubernetes.io/managed-by: gcp-cloud-build-deploy
-  name: flask-app
-  namespace: gcp-devops-prod
+  name: flask-app-lb
 spec:
   ports:
   - port: 80
