@@ -18,7 +18,7 @@ spec:
         app: flask-app
     spec:
       containers:
-      - image: olanigan8/gcp-flask:v0.1
+      - image: gcr.io/deep-voyage-384219/gcpflask
         name: gcp-flask
         resources: {}
 status: {}
