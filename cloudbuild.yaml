@@ -12,5 +12,5 @@ steps:
   - --filename=gke.yaml
   - --image=gcr.io/$PROJECT_ID/gcpflask
   - --location=us-central1-c
-  - --clusters=gcp-devops
+  - --cluster=gcp-devops
   - --namespace=gcp-devops-prod
